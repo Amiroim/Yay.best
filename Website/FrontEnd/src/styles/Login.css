@@ -1,0 +1,60 @@
+.entrance-box{
+    display: flex;
+    flex-direction: column;
+    /* height: 70dvh; */
+    padding: 0 10dvw;
+    width: 90dvw;
+    border-radius: 10px;
+    background-color: #0000000a;
+    justify-content: center;
+    text-align: center;
+    gap: 60px;
+}
+
+
+.input-items{
+    min-width: 70dvw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputs{
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.entrance-box input::placeholder{
+    color: #afafaf;
+}
+.entrance-box input,
+.entrance-box button{
+    max-width: 500px;
+    height: 35px;
+    border-radius: 15px;
+    text-align: center;
+    background: rgba(26, 110, 240, 0.12);
+    border: 1px solid rgba(26, 110, 240, 0.35);
+    color: #fafafa;
+    outline: none;
+}
+
+.entrance-box button{
+    width: 100%;
+}
+
+.subtitle{
+    color: #ffffff66;
+}
+
+.login{
+    cursor: pointer;
+    background: linear-gradient(135deg, rgb(96, 165, 250) 0%, rgb(26, 110, 240) 50%, rgb(29, 78, 216) 100%) !important;
+    box-shadow: rgba(26, 110, 240, 0.44) 0px 8px 28px, rgba(255, 255, 255, 0.15) 0px 1px 0px inset;
+}

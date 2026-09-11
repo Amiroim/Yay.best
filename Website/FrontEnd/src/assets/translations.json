@@ -1,0 +1,63 @@
+{
+
+  "alert_success": {
+    "fa": "موفقیت‌آمیز",
+    "fa-fun": "آقا عالی",
+    "en": "Success"
+  },
+  "alert_info": {
+    "fa": "اطلاعیه",
+    "fa-fun": "یچی مهم",
+    "en": "Notice"
+  },
+  "alert_error": {
+    "fa": "خطا",
+    "fa-fun": "این بده",
+    "en": "Error"
+  },
+  "alert_login_success": {
+    "fa": "ورود با موفقیت انجام شد.",
+    "fa-fun": "انگاری درست لاگین کردی",
+    "en": "Logged in successfully."
+  },
+  "login_title": {
+    "fa": "خوش آمدید",
+    "fa-fun": "خوش اومدی برار",
+    "en": "Welcome"
+  },
+  "login_subtitle": {
+    "fa": "وارد حساب خود شوید",
+    "fa-fun": "وارد اکانتت شو",
+    "en": "Login to your account"
+  },
+  "login_username-email_input": {
+    "fa": "نام کاربری / ایمیل",
+    "fa-fun": "نام کاربریت یا ایمیلت",
+    "en": "Username / E-mail"
+  },
+  "login_password_input": {
+    "fa": "رمز عبور",
+    "fa-fun": "رمزت",
+    "en": "Password"
+  },
+  "login_button": {
+    "fa": "ورود به حساب",
+    "fa-fun": "بزن بریم",
+    "en": "Log In"
+  },
+  "captcha_error": {
+    "fa": "لطفاً کپچا را حل کنید",
+    "fa-fun": "عامو کپچا به اون بزرگیو نمیبینی؟",
+    "en": "Please solve the captcha"
+  },
+  "captcha_renew": {
+    "fa": "کپچای جدید",
+    "fa-fun": "یچی جدید بده",
+    "en": "New captcha"
+  },
+  "captcha_answer": {
+    "fa": "جواب",
+    "fa-fun": "جوابش",
+    "en": "Answer"
+  }
+}
