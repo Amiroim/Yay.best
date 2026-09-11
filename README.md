@@ -91,7 +91,7 @@
   <tbody>
     <tr>
       <td>Plugin-to-API HTTP event listeners</td>
-      <td align="center">🟡 In Progress</td>
+      <td align="center">🟢 Done</td>
     </tr>
     <tr>
       <td>JWT auth & API security middleware</td>
@@ -99,11 +99,11 @@
     </tr>
     <tr>
       <td>SQL schema setup and migrations</td>
-      <td align="center">⚪ Pending</td>
+      <td align="center">🟢 Done</td>
     </tr>
     <tr>
       <td>React dashboard integration</td>
-      <td align="center">⚪ Pending</td>
+      <td align="center">🟡 In Progress</td>
     </tr>
     <tr>
       <td>Public repository release</td>
