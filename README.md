@@ -14,7 +14,7 @@
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 <table>
   <thead>
@@ -50,7 +50,7 @@
 
 ---
 
-## ✨ Features & Responsibilities
+## Features & Responsibilities
 
 <table>
   <thead>
@@ -97,7 +97,7 @@
 
 ---
 
-## 📡 API Blueprint
+## API Blueprint
 
 <table>
   <thead>
