@@ -56,94 +56,30 @@
   <thead>
     <tr>
       <th align="left">Feature</th>
-      <th align="center">Minecraft Plugin</th>
-      <th align="center">Express Backend</th>
-      <th align="center">React Panel</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>User Registration</td>
-      <td align="center">❌</td>
-      <td align="center">✅</td>
-      <td align="center">✅</td>
     </tr>
     <tr>
       <td>Join Verification (Ban/Auth Check)</td>
-      <td align="center">✅</td>
-      <td align="center">✅</td>
-      <td align="center">❌</td>
     </tr>
     <tr>
       <td>Account Management (Edit / Delete)</td>
-      <td align="center">❌</td>
-      <td align="center">✅</td>
-      <td align="center">✅</td>
     </tr>
     <tr>
       <td>Ban Moderation Console</td>
-      <td align="center">❌</td>
-      <td align="center">✅</td>
-      <td align="center">✅</td>
     </tr>
     <tr>
       <td>Session & Activity Logging</td>
-      <td align="center">✅</td>
-      <td align="center">✅</td>
-      <td align="center">✅</td>
     </tr>
   </tbody>
 </table>
 
----
+------
 
-## API Blueprint
-
-<table>
-  <thead>
-    <tr>
-      <th align="left">Method</th>
-      <th align="left">Endpoint</th>
-      <th align="left">Purpose</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>POST</code></td>
-      <td><code>/api/auth/register</code></td>
-      <td>Create new web and game user accounts</td>
-    </tr>
-    <tr>
-      <td><code>POST</code></td>
-      <td><code>/api/auth/login</code></td>
-      <td>Authenticate dashboard users</td>
-    </tr>
-    <tr>
-      <td><code>POST</code></td>
-      <td><code>/api/player/verify</code></td>
-      <td>Plugin handshake to validate player status on join</td>
-    </tr>
-    <tr>
-      <td><code>GET</code></td>
-      <td><code>/api/player/ban-status/:uuid</code></td>
-      <td>Check active ban records by Minecraft UUID</td>
-    </tr>
-    <tr>
-      <td><code>GET</code></td>
-      <td><code>/api/admin/players</code></td>
-      <td>Retrieve a paginated list of accounts</td>
-    </tr>
-    <tr>
-      <td><code>POST</code></td>
-      <td><code>/api/admin/bans</code></td>
-      <td>Apply temporary or permanent player bans</td>
-    </tr>
-  </tbody>
-</table>
-
----
-
-## 🚀 Development Roadmap
+## Development Roadmap
 
 <table>
   <thead>
@@ -173,5 +109,7 @@
       <td>Public repository release</td>
       <td align="center">⚪ Pending</td>
     </tr>
+
   </tbody>
 </table>
+<p>made with ❤️</p>
