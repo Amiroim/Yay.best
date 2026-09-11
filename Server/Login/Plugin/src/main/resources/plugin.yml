@@ -1,0 +1,11 @@
+name: LoginPlugin
+version: '1.0.0'
+main: best.yay.loginplugin.LoginPlugin
+api-version: '1.20'
+author: Amiro
+description: Whitelist + login control plugin backed by an external database API.
+
+commands:
+  login:
+    description: Authenticate with your account password.
+    usage: /login <password>

@@ -1,0 +1,75 @@
+# ==========================================================
+#  LoginPlugin configuration
+# ==========================================================
+
+# The external API that backs your account database.
+api:
+  base-url: "https://mc-api.yay.best"
+
+  # Shared secret sent as the "X-API-Key" header on every request. Must match
+  # the backend's API_KEY exactly, or every request gets rejected with 401.
+  key: "b2ad25f6f159132f9488d8ccd72e6d69249f9a894566b9a54850c09a1d758012"
+
+  # GET {base-url}{check-user-path}?username=<name>
+  # Expected JSON response:
+  #   {"exists": false}
+  #   {"exists": true, "allowed": true}
+  #   {"exists": true, "allowed": false, "reason": "banned"}
+  check-user-path: "/api/checkUser"
+
+  # POST {base-url}{login-path}
+  # Body: {"username": "<name>", "password": "<pass>", "uuid": "<player uuid>"}
+  # Expected JSON response:
+  #   {"valid": true}
+  #   {"valid": false, "reason": "invalid_credentials"}   (counts as a wrong-password attempt)
+  #   {"valid": false, "reason": "banned"}                 (also: "restricted", "unauthorised")
+  #   {"valid": false, "reason": "uuid_mismatch"}          (account already linked elsewhere)
+  #   {"valid": false, "reason": "not_found"}
+  login-path: "/api/login"
+
+  # POST {base-url}{logout-path}
+  # Body: {"username": "<name>", "uuid": "<player uuid>"}
+  # Fire-and-forget - only called for sessions that successfully logged in.
+  logout-path: "/api/logout"
+
+  connect-timeout-seconds: 5
+  request-timeout-seconds: 5
+
+# Where players are held (locked, in Spectator mode) until they run /login.
+lock-location:
+  world: "world"
+  x: 214
+  y: 77
+  z: -631
+  yaw: 0.0
+  pitch: 0.0
+
+login:
+  # Kick the player if they don't run /login successfully within this many seconds.
+  timeout-seconds: 60
+  # Kick the player after this many wrong password attempts, within one session.
+  max-attempts: 3
+
+# Persistent brute-force protection - tracked per-username, survives
+# disconnect/reconnect (unlike login.max-attempts, which only applies
+# within a single session).
+brute-force:
+  window-seconds: 300
+  max-failures-in-window: 5
+  lockout-seconds: 300
+
+messages:
+  not-whitelisted: "&cYour account was not found. Contact an administrator."
+  api-error: "&cAuthentication service is unavailable. Please try again shortly."
+  please-login: "&ePlease log in using: &6/login <password>"
+  already-logged-in: "&eYou are already logged in."
+  locked-cannot-move: "&cYou must log in first: /login <password>"
+  login-success: "&aLogin successful. Welcome back!"
+  login-failed: "&cIncorrect password. Attempts remaining: %attempts%"
+  login-max-attempts: "&cToo many failed attempts. You have been kicked."
+  login-timeout: "&cLogin timed out. You have been kicked."
+  login-banned: "&cYour account has been banned."
+  login-restricted: "&cYour account is restricted. Contact an administrator."
+  login-unauthorised: "&cYour account is not authorised yet. Contact an administrator."
+  login-uuid-mismatch: "&cThis account is already linked to a different Minecraft account."
+  login-account-not-found: "&cAccount not found."
