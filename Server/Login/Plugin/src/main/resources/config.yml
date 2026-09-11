@@ -4,7 +4,7 @@
 
 # The external API that backs your account database.
 api:
-  base-url: "https://mc-api.yay.best"
+  base-url: "https://api.domain.com"
 
   # Shared secret sent as the "X-API-Key" header on every request. Must match
   # the backend's API_KEY exactly, or every request gets rejected with 401.
