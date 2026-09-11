@@ -1,6 +1,6 @@
 <div align="center">
 
-# Yay.best
+# Yay.best (incomplete)
 
 <p>
   <img src="https://img.shields.io/badge/Status-In%20Development-yellow?style=for-the-badge" alt="Status" />
